@@ -59,7 +59,7 @@ resume-builder/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/techgurubh/ai-resume-builder.git
+git clone https://github.com/techgurubh/resume-builder.git
 cd ai-resume-builder
 
 # 2. Install dependencies
@@ -72,7 +72,7 @@ npm run dev
 # http://localhost:5173
 ```
 
-      https://github.com/techgurubh/ai-resume-builder
+      https://techgurubh.github.io/resume-builder/
 
 ---
 
