@@ -16,6 +16,9 @@ export const ACTIONS = {
   UPDATE_EDU_FIELD: "UPDATE_EDU_FIELD",
   ADD_EDU: "ADD_EDU",
   REMOVE_EDU: "REMOVE_EDU",
+  UPDATE_CERT_FIELD: "UPDATE_CERT_FIELD",
+  ADD_CERT:          "ADD_CERT",
+  REMOVE_CERT:       "REMOVE_CERT",
 };
 
 // ─── Reducer ──────────────────────────────────────────────────────────────────
@@ -120,6 +123,26 @@ function resumeReducer(state, action) {
       return {
         ...state,
         education: state.education.filter((e) => e.id !== action.id),
+      };
+
+      case ACTIONS.UPDATE_CERT_FIELD:
+      return {
+        ...state,
+        certifications: (state.certifications || []).map((c) =>
+          c.id === action.id ? { ...c, [action.field]: action.value } : c
+        ),
+      };
+
+    case ACTIONS.ADD_CERT:
+      return {
+        ...state,
+        certifications: [...(state.certifications || []), { id: uid(), name: "", org: "", year: "" }],
+      };
+
+    case ACTIONS.REMOVE_CERT:
+      return {
+        ...state,
+        certifications: (state.certifications || []).filter((c) => c.id !== action.id),
       };
 
     default:
