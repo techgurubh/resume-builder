@@ -7,6 +7,7 @@ import CreativeTemplate     from "./components/templates/CreativeTemplate";
 import MinimalTemplate      from "./components/templates/MinimalTemplate";
 import ExecutiveTemplate    from "./components/templates/ExecutiveTemplate";
 import ZetyTemplate         from "./components/templates/ZetyTemplate";
+import TerracottaTemplate   from "./components/templates/TerracottaTemplate";
 import { usePrint } from "./hooks/usePrint";
 
 // ─── Template registry ────────────────────────────────────────────────────────
@@ -17,6 +18,7 @@ const TEMPLATES = [
   { id: "minimal",      label: "Minimal",      icon: "—", component: MinimalTemplate },
   { id: "executive",    label: "Executive",    icon: "◆", component: ExecutiveTemplate },
   { id: "zety",         label: "Zety",         icon: "◑", component: ZetyTemplate },
+  { id: "terracotta",   label: "Terracotta",   icon: "🟠", component: TerracottaTemplate },
 ];
 
 // ─── Preview panel (needs access to context) ──────────────────────────────────
