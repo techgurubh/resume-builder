@@ -48,14 +48,8 @@ export const defaultData = {
     },
   ],
   skills: [
-    "Figma",
-    "Design Systems",
-    "User Research",
-    "Prototyping",
-    "Accessibility",
-    "React",
-    "TypeScript",
-    "Data Viz",
+    "Figma", "Design Systems", "User Research",
+    "Prototyping", "Accessibility", "React", "TypeScript", "Data Viz",
   ],
   education: [
     {
@@ -73,5 +67,10 @@ export const defaultData = {
       gpa: "3.7 / 4.0",
     },
   ],
+  // ↓ THIS ENTIRE BLOCK IS NEW ↓
+  certifications: [
+    { id: 1, name: "Google UX Design Certificate", org: "Google",        year: "2023" },
+    { id: 2, name: "Certified Scrum Master (CSM)",  org: "Scrum Alliance", year: "2021" },
+  ],
+  // ↑ END NEW BLOCK ↑
 };
-
